@@ -2,21 +2,26 @@
 
 [简体中文](README.md) | [English](README.en.md)
 
-PitEngineer is an AI race engineer for iRacing, designed around simple controls and brief radio replies. Ask about the race while keeping your attention on driving.
-
-Hold the push-to-talk key to ask a question, then release it and wait for a reply. You can also type a question or use a separate report key to request a race summary.
-
-> The sections below describe the current query scope and example questions. They do not mean that every car, track, accent, or model service combination has been validated in live races.
+An AI voice race engineer for iRacing with Chinese and English replies, pit strategy, and automatic race reports.
 
 ## Quick start
 
-1. Install and launch PitEngineer.
-2. Select your microphone, speech language, speech engine, and hotkeys in Settings.
-3. For online AI replies, configure your own model service, model name, and API key.
-4. Start iRacing and wait for the data connection and local speech models to be ready.
-5. Hold the push-to-talk key, speak, then release it and wait for the engineer's reply.
+1. Install and launch PitEngineer. In Settings, select your microphone, speech language, and push-to-talk key.
+2. For online AI replies, [set up your API key](#set-up-an-api-key-optional).
+3. Start iRacing and wait for the data connection and local speech models to be ready.
+4. Hold push-to-talk to ask a question, then release to hear the reply. You can also type a question or use the report hotkey.
 
-Local models need time to load on first launch. When no online model is configured, the service fails, or the network is unavailable, some straightforward questions can receive local replies. Offline handling is not guaranteed for every wording or complex follow-up.
+### Set up an API key (optional)
+
+Local speech and some local replies do not need an API key. For online AI, use your own provider account and key. The installer does not include one.
+
+1. Create an API key in your provider's dashboard. For Poe, go to [Poe API Keys](https://poe.com/api/keys).
+2. In PitEngineer, open **Settings → AI Provider**. For Poe, select **Poe** and use `https://api.poe.com/v1` as the Base URL. For another compatible service, select **OpenAI-Compatible** and use the Base URL supplied by your provider.
+3. Enter an available **model ID or Poe bot name** and your **API key**. Enable **Use model for complex questions and report wording**, then click **Apply Settings**. Try asking a race question on the main screen.
+
+The key is kept for the current session only. Re-enter it after restarting the app, and keep it out of GitHub, screenshots, and feedback logs.
+
+> The examples below illustrate what you can ask. Replies depend on game data, valid observations, and model availability. Complex questions and follow-ups may not work offline.
 
 ## What can you ask?
 
