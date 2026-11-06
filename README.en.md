@@ -310,6 +310,6 @@ When reporting an issue, include the application version, language, input method
 
 ## Project maintenance
 
-PitEngineer is developed and maintained by Tank-47.
+PitEngineer is developed and maintained by antKal117.
 
 The main application source code is currently closed. Open-sourcing may be considered in the future, but the scope and timing have not been decided. Free personal, non-commercial use is currently permitted. Third-party components and separately licensed speech source code retain their own licences. See the [licensing notice](LICENSE); previously granted licences remain unaffected.
