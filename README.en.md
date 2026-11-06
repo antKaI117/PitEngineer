@@ -2,7 +2,7 @@
 
 [简体中文](README.md) | [English](README.en.md)
 
-An AI voice race engineer for iRacing with Chinese and English replies, pit strategy, and automatic race reports.
+An AI voice race engineer for iRacing with **built-in corner data for 260 tracks and layouts**, Chinese and English replies, pit strategy, and automatic race reports.
 
 ## Quick start
 
