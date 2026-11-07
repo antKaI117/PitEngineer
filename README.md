@@ -15,9 +15,9 @@ iRacing AI 语音工程师，**内置 260 个赛道／布局的弯道数据**，
 
 本地语音和部分本地回答不需要 API Key。在线 AI 需要你自己的服务账号和密钥，安装包不附带密钥。
 
-1. 在模型服务商的控制台创建 API Key。用 Poe 的话，打开 [Poe API Keys](https://poe.com/api/keys)。
-2. 在 PitEngineer 的 **设置 → 模型供应商** 中选择服务。Poe 选 **Poe**，基础 URL 为 `https://api.poe.com/v1`；其他兼容服务选 **OpenAI-Compatible**，填写服务商提供的基础 URL。
-3. 填入可用的**模型 ID／Poe Bot 名称**和 **API Key**，勾选「使用模型处理复杂问题及赛况报告措辞」，点击「套用设定」。回到主界面，用一个比赛问题试问。
+1. 在 [DeepSeek 开放平台](https://platform.deepseek.com/api_keys) 创建自己的 API Key。
+2. 在 PitEngineer 的 **设置 → 模型供应商** 中选择 **DeepSeek**，确认基础 URL 为 `https://api.deepseek.com`。
+3. 填入账号可用的**模型 ID**和自己的 **API Key**，勾选「使用模型处理复杂问题及赛况报告措辞」，点击「套用设定」。回到主界面，用一个比赛问题试问。
 
 API Key 仅在本次运行有效，重启 App 后需要重新输入。不要把密钥贴到 GitHub、截图或反馈日志里。
 
@@ -287,7 +287,7 @@ API Key 仅在本次运行有效，重启 App 后需要重新输入。不要把�
 
 ## 模型服务与本地语音
 
-可以配置 Poe、DeepSeek、Qwen、Gemini、Ollama 以及兼容的自定义接口。是否可用取决于所选模型、接口地址、服务权限及当前兼容情况；并非每家的所有高级功能都受支持。
+除 DeepSeek 外，也可以使用其他兼容的在线或本地模型。是否可用取决于接口地址、账号权限及模型兼容性。
 
 当前安装包方案使用 faster-whisper 进行本地语音识别，中文使用 MeloTTS、英文使用 Piper。自定义引擎或声音能否使用，以具体版本和设置页为准；不是所有开发环境中的模型都会随包提供。
 

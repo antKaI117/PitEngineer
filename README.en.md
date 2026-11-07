@@ -15,9 +15,9 @@ An AI voice race engineer for iRacing with **built-in corner data for 260 tracks
 
 Local speech and some local replies do not need an API key. For online AI, use your own provider account and key. The installer does not include one.
 
-1. Create an API key in your provider's dashboard. For Poe, go to [Poe API Keys](https://poe.com/api/keys).
-2. In PitEngineer, open **Settings → AI Provider**. For Poe, select **Poe** and use `https://api.poe.com/v1` as the Base URL. For another compatible service, select **OpenAI-Compatible** and use the Base URL supplied by your provider.
-3. Enter an available **model ID or Poe bot name** and your **API key**. Enable **Use model for complex questions and report wording**, then click **Apply Settings**. Try asking a race question on the main screen.
+1. Create a key on the [OpenAI API keys page](https://platform.openai.com/api-keys).
+2. In PitEngineer, open **Settings → AI Provider**, select **OpenAI-Compatible**, and set the Base URL to `https://api.openai.com/v1`.
+3. Enter a **Chat Completions model ID** available to your OpenAI project and your own **API key**. Enable **Use model for complex questions and report wording**, then click **Apply Settings**. Try asking a race question on the main screen.
 
 The key is kept for the current session only. Re-enter it after restarting the app, and keep it out of GitHub, screenshots, and feedback logs.
 
@@ -277,7 +277,7 @@ Reports are not guaranteed to cover every event. Speech output, recognition, and
 
 ## Model services and local speech
 
-You can configure Poe, DeepSeek, Qwen, Gemini, Ollama, and compatible custom endpoints. Availability depends on the selected model, endpoint address, service permissions, and current compatibility. Not every advanced feature from every provider is supported.
+Other compatible online and local model endpoints can also be configured. Availability depends on the endpoint, account permissions and model compatibility.
 
 The current packaging approach uses faster-whisper for local speech recognition, MeloTTS for Chinese speech, and Piper for English speech. Custom engines and voices depend on the specific version and Settings page. Not every model used in development is included in the package.
 
